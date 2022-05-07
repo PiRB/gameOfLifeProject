@@ -16,11 +16,14 @@ const App = () => {
   }, [currentConfiguration, previousConfiguration]);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header class='flex items-start justify-start'>
         <h2>Game of Life</h2>
-        <Canvas configuration={currentConfiguration} setConfiguration={setCurrentConfiguration} previousConfiguration={previousConfiguration} setPreviousConfiguration={setPreviousConfiguration} />
       </header>
+      <br />
+      <div class='flex items-start justify-start'>
+        <Canvas configuration={currentConfiguration} setConfiguration={setCurrentConfiguration} previousConfiguration={previousConfiguration} setPreviousConfiguration={setPreviousConfiguration} />
+      </div>
     </div>
   );
 }
