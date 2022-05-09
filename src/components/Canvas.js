@@ -17,7 +17,7 @@ function Canvas({ configuration, previousConfiguration }) {
     }, [configuration, previousConfiguration])
 
     return (
-        <canvas ref={canvasRef} width="300" height="300" className="border-black-500 border-2 bg-gray-50" style={{ height: '600px', width: '600px' }}></canvas>
+        <canvas ref={canvasRef} width="200" height="200" className="border-black-500 border-2 bg-gray-50" style={{ height: '600px', width: '600px' }}></canvas>
     );
 }
 
